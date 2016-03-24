@@ -82,7 +82,7 @@ PROGRAM get_samples
     write(*,100), neff_best, omch2_best, zeq_best, thetas_best, thetad_best
 
     open(unit=10, file=params_file, status='unknown')
-    !write(10,102) weight, loglike, params_list
+    write(10,102) weight, loglike, params_list
 
     do i=0, nsamples-1
         neff = neff_min + i*delta_neff
