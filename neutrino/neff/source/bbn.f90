@@ -42,7 +42,7 @@ contains
    !file_id = new_file_unit()
    !call OpenTxtFile(trim(DataDir)//'helium.dat', file_id)
     file_id = 1123
-    open(unit=file_id, file='/home/hou/Projects/CMBtools/cosmologist.info/cosmomc/data/helium.dat', status='old', action='read')
+    open(unit=file_id, file='/home/zhenhou/Projects/CMBtools/cosmologist.info/cosmomc/data/helium.dat', status='old', action='read')
 
 !skip data file header
     do i=1,7
