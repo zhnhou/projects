@@ -4,6 +4,7 @@
 # <codecell>
 
 %matplotlib inline
+%config InlineBackend.figure_format = 'svg'
 import numpy as np
 import matplotlib.pyplot as plt
 from hpylib.util.remote_data import *
