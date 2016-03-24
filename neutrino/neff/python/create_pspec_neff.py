@@ -14,4 +14,4 @@ dl_sample = calc_pspec(param, output_root=output_root)
 sample_prefix = 'params_base_TT_lowP_lensing_const_omegab_zeq_thetas_thetad'
 param = get_params(sample_path, sample_prefix)
 output_root = sample_path+'Dl_base_TT_lowP_lensing_const_omegab_zeq_thetas_thetad'
-dl_sample = calc_pspec(param, output_root=output_root)
+dl_sample = calc_pspec(param, output_root=output_root, TCMB=2.725e6)
