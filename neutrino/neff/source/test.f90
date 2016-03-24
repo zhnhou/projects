@@ -7,30 +7,30 @@ PROGRAM get_samples
 
     implicit none
     
-    character(*),   parameter   :: prefix = 'samples/params_base_camspec_lowl_lowlike_const_omegab_zeq_thetas_thetad'
+    character(*),   parameter   :: prefix = 'samples/params_base_TT_lowP_lensing_const_omegab_zeq_thetas_thetad'
     character(*),   parameter   :: params_file = prefix//'.txt'
     character(*),   parameter   :: pnames_file  = prefix//'.paramnames'
-    
-    real(8),        parameter   :: ombh2_best  = 0.022032d0
-    real(8),        parameter   :: omch2_best  = 0.12038d0
+
+    real(8),        parameter   :: ombh2_best  = 0.02226d0
+    real(8),        parameter   :: omch2_best  = 0.1186d0
     real(8),        parameter   :: neff_best   = 3.046d0
-    real(8),        parameter   :: H0_best     = 67.04d0
-    real(8),        parameter   :: omnuh2_best = 0.000d0
-    !real(8),        parameter   :: omnuh2_best = 0.060d0/94.30d0
+    real(8),        parameter   :: H0_best     = 67.81d0
+    !real(8),        parameter   :: omnuh2_best = 0.000d0
+    real(8),        parameter   :: omnuh2_best = 0.060d0/94.30d0
 
     real(8),        parameter   :: neff_min = 1.0d0
     real(8),        parameter   :: neff_max = 7.0d0
     real(8),        parameter   :: delta_neff = 1.0d0
     
-    real(8),        parameter   :: tau_best    = 0.09000d0
+    real(8),        parameter   :: tau_best    = 0.066d0
     real(8),        parameter   :: omk_best    = 0.0000000E+00
-    real(8),        parameter   :: ns_best     = 0.96190d0
+    real(8),        parameter   :: ns_best     = 0.9677d0
     real(8),        parameter   :: nt_best     = 0.0000000E+00
     real(8),        parameter   :: nrun_best   = 0.0000000E+00
-    real(8),        parameter   :: logA_best   = 3.0980d0
+    real(8),        parameter   :: logA_best   = 3.062d0
     real(8),        parameter   :: r_best      = 0.0000000E+00
     real(8),        parameter   :: w_best      = -1.000000E+00
-
+    
     character(20)   :: pnames(10)
     
     integer(4)  :: i, nsamples, iz
