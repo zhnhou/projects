@@ -9,9 +9,9 @@ sample_path = home_path+'data_'+host_name+'/projects/neutrino/neff/param_sample/
 sample_prefix = 'params_base_TT_lowP_lensing_const_omegab_zeq_thetas'
 param = get_params(sample_path, sample_prefix)
 output_root = sample_path+'Dl_base_TT_lowP_lensing_const_omegab_zeq_thetas'
-dl_sample = calc_pspec(param, output_root=output_root)
+dl_sample = calc_pspec(param, output_root=output_root, TCMB=2.7255e6)
 
 sample_prefix = 'params_base_TT_lowP_lensing_const_omegab_zeq_thetas_thetad'
 param = get_params(sample_path, sample_prefix)
 output_root = sample_path+'Dl_base_TT_lowP_lensing_const_omegab_zeq_thetas_thetad'
-dl_sample = calc_pspec(param, output_root=output_root, TCMB=2.725e6)
+dl_sample = calc_pspec(param, output_root=output_root, TCMB=2.7255e6)
