@@ -4,7 +4,7 @@ CFLAGS = -O3 -ip -heap-arrays -vec-report0 -openmp -fpp -CB -traceback -W0 -WB
 FFLAGS = -CB -traceback -openmp -O3 -ip -W0 -WB -fpp -vec_report0
 
 #PRJ  = test_const_omegab_zeq_thetas
-PRJ = get_sample_mnu_const_omegab_omegac_thetas
+PRJ = get_sample_mnu_const_omegab_omegam
 
 OBJ  = subroutines.o inifile.o equations.o bbn.o recfast.o expansion.o $(PRJ).o
 FC90 = ifort
